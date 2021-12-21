@@ -924,6 +924,7 @@ importers:
       bignumber.js: 9.0.1
       json-stable-stringify: ^1.0.1
       lodash-unified: 1.0.1
+      socket.io-client: 2.4.0
       urlcat: ^2.0.4
       uuid: ^8.3.2
     dependencies:
@@ -933,6 +934,7 @@ importers:
       bignumber.js: 9.0.1
       json-stable-stringify: 1.0.1
       lodash-unified: 1.0.1_bd4845f8c1bf1d81a616b60758034d0a
+      socket.io-client: 2.4.0
       urlcat: 2.0.4
       uuid: 8.3.2
 
