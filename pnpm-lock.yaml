@@ -941,8 +941,10 @@ importers:
   packages/web3-shared/base:
     specifiers:
       bignumber.js: 9.0.1
+      date-fns: ^2.27.0
     dependencies:
       bignumber.js: 9.0.1
+      date-fns: 2.27.0
 
   packages/web3-shared/evm:
     specifiers:
