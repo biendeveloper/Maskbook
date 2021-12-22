@@ -717,6 +717,7 @@ importers:
       '@rollup/plugin-json': ^4.1.0
       '@rollup/plugin-node-resolve': ^13.0.6
       '@rollup/plugin-sucrase': ^4.0.1
+      '@rollup/plugin-typescript': ^8.3.0
       rollup: ^2.60.1
       urlcat: ^2.0.4
     dependencies:
@@ -731,6 +732,7 @@ importers:
       '@rollup/plugin-json': 4.1.0_rollup@2.60.1
       '@rollup/plugin-node-resolve': 13.0.6_rollup@2.60.1
       '@rollup/plugin-sucrase': 4.0.1_rollup@2.60.1
+      '@rollup/plugin-typescript': 8.3.0_e8432963bdc1b246a199a2a9d30c1c7a
       rollup: 2.60.1
 
   packages/public-api:
@@ -5071,6 +5073,20 @@ packages:
       '@rollup/pluginutils': 4.1.2
       rollup: 2.60.1
       sucrase: 3.20.3
+    dev: true
+
+  /@rollup/plugin-typescript/8.3.0_e8432963bdc1b246a199a2a9d30c1c7a:
+    resolution: {integrity: sha512-I5FpSvLbtAdwJ+naznv+B4sjXZUcIvLLceYpITAn7wAP8W0wqc5noLdGIp9HGVntNhRWXctwPYrSSFQxtl0FPA==}
+    engines: {node: '>=8.0.0'}
+    peerDependencies:
+      rollup: ^2.14.0
+      tslib: '*'
+      typescript: '>=3.7.0'
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.60.1
+      resolve: 1.20.0
+      rollup: 2.60.1
+      typescript: 4.6.0-dev.20211202
     dev: true
 
   /@rollup/pluginutils/3.1.0_rollup@2.60.1:
