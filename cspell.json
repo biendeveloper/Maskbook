@@ -353,7 +353,9 @@
         "Kodav",
         "koda",
         "poap",
-        "irss"
+        "irss",
+        "treeshake",
+        "xtest"
     ],
     "ignoreRegExpList": ["/@servie/"],
     "overrides": [
