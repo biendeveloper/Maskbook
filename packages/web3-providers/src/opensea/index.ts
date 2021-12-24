@@ -21,7 +21,6 @@ export async function getAssetsListFromOpenSea(
 
     const response = await fetch(`${OPENSEA_API}/api/v1/assets?${params.toString()}`, {
         method: 'GET',
-        mode: 'cors',
         headers: {
             'x-api-key': apiKey ?? OPENSEA_API_KEY,
         },
@@ -38,7 +37,6 @@ export async function getCollectionsFromOpenSea(owner: string, opts: { page?: nu
 
     const response = await fetch(`${OPENSEA_API}/api/v1/collections?${params.toString()}`, {
         method: 'GET',
-        mode: 'cors',
         headers: {
             'x-api-key': OPENSEA_API_KEY,
         },
