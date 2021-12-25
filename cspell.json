@@ -244,7 +244,6 @@
         "Görli",
         "resizer",
         "Pageable",
-        "Hasher",
         "metaverse",
         "hexlify",
         "contribs",
@@ -353,7 +352,6 @@
         "Kodav",
         "koda",
         "poap",
-        "irss",
         "treeshake",
         "xtest"
     ],
