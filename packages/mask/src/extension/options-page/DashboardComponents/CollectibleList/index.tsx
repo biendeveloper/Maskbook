@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 import { useValueRef } from '@masknet/shared'
 import {
     ChainId,
@@ -14,6 +14,7 @@ import { currentNonFungibleAssetDataProviderSettings } from '../../../../plugins
 import { useI18N } from '../../../../utils'
 import { CollectibleCard } from './CollectibleCard'
 import { Image } from '../../../../components/shared/Image'
+import { WalletMessages } from '@masknet/plugin-wallet'
 
 export const CollectibleContext = createContext<{
     collectiblesRetry: () => void
@@ -117,8 +118,7 @@ function CollectibleListUI(props: CollectibleListUIProps) {
     const { t } = useI18N()
     const classes = useStylesExtends(useStyles(), props)
 
-    // TODO: should we listen erc721 event
-    // useEffect(() => WalletMessages.events.erc721TokensUpdated.on(collectiblesRetry))
+    useEffect(() => WalletMessages.events.erc721TokensUpdated.on(collectiblesRetry))
 
     if (loading)
         return (
