@@ -353,7 +353,8 @@
         "koda",
         "poap",
         "treeshake",
-        "xtest"
+        "xtest",
+        "xdescribe"
     ],
     "ignoreRegExpList": ["/@servie/"],
     "overrides": [
