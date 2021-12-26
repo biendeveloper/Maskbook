@@ -12,7 +12,7 @@ const { shift } = Array.prototype
 function read(path: string) {
     const fragments = apply(split, path, ['.' as any])
     let result: any = window
-    while (fragments.length === 0) {
+    while (fragments.length !== 0) {
         const key = apply(shift, fragments, [])
         result = key ? result[key] : result
     }
